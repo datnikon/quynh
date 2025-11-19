@@ -21,7 +21,10 @@ const quotes = [
     "Hạnh phúc không phải là đích đến, mà là hành trình chúng ta đi cùng nhau.",
     "Chỉ cần có em, mọi bão giông đều hóa dịu dàng.",
     "Cảm ơn đời mỗi sớm mai thức dậy, ta có thêm ngày nữa để yêu thương.",
-    "Yêu là muốn ở bên một người, không muốn xa người đó dù chỉ là một giây."
+    "Yêu là muốn ở bên một người, không muốn xa người đó dù chỉ là một giây.",
+    "Ở bên anh, em không cần phải trưởng thành, cứ làm em bé là được.",
+    "Thế giới của anh không to, chỉ vừa đủ để đựng một mình em.",
+    "Together is my favorite place to be. (Bên nhau là nơi yêu thích nhất của anh)"
 ];
 
 // 5. Nhật ký (Thêm mới lên đầu)
