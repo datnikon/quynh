@@ -50,10 +50,10 @@ const photos = [
 
 // 7. Bucket List - Những điều cùng làm
 const loveBucketList = [
-    { text: "Cùng nhau đi Du Lịch", done: false }, // Chưa làm
-    { text: "Đi xem phim", done: false }, // Đã làm
+    { text: "Đi xem phim", done: false },
     { text: "Nấu cho nhau một bữa ăn", done: false },
-    { text: "Mặc áo đôi", done: false },
+    //{ text: "Mặc áo đôi", done: false },
     { text: "Cùng đón giao thừa", done: false },
-    { text: "Chụp 1000 tấm ảnh cùng nhau", done: false }
+    { text: "Chụp 1.000 tấm ảnh cùng nhau", done: false },
+    { text: "Cùng nhau đi du nịch", done: false },
 ];
