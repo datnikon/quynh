@@ -99,4 +99,22 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => heart.remove(), 5000);
     }
     setInterval(createHeart, 500);
+
+    // --- 8. RENDER BUCKET LIST (Thêm đoạn này vào) ---
+    const bucketContainer = document.getElementById('bucket-list-container');
+    
+    loveBucketList.forEach(item => {
+        const div = document.createElement('div');
+        // Kiểm tra xem đã làm chưa để thêm class 'done'
+        div.className = item.done ? 'bucket-item done' : 'bucket-item';
+        
+        // Icon: Nếu xong rồi thì ❤️, chưa xong thì ô vuông ⬜ (hoặc icon tròn)
+        const icon = item.done ? '❤️' : '⬜'; 
+        
+        div.innerHTML = `
+            <span class="bucket-check">${icon}</span>
+            <span class="bucket-text">${item.text}</span>
+        `;
+        bucketContainer.appendChild(div);
+    });
 });
