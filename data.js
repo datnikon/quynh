@@ -2,7 +2,7 @@
 
 // 1. Ngày yêu nhau (Năm, Tháng - 1, Ngày, Giờ, Phút)
 // Lưu ý: Tháng 11 thì điền là 10, Tháng 1 thì điền là 0
-const startDate = new Date(2025, 10, 18, 8, 50, 0); 
+const startDate = new Date(2025, 10, 18, 20, 50, 0);
 
 // 2. Link Google Form của bạn
 const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSer0xtF-0d01ayk1sMnzJGWjOybjoLHIs2PROi9Lw-J2m8pQQ/viewform?usp=dialog"; 
@@ -32,7 +32,7 @@ const diaryEntries = [
         content: "Hôm nay anh đã ngồi làm chiếc web này, vừa làm vừa nghĩ đến nụ cười của em. Hy vọng em sẽ thích nó."
     },
     {
-        date: "18/11/2025 - 08:50",
+        date: "18/11/2025 - 20:50",
         title: "Khoảnh khắc bắt đầu",
         content: "Tin nhắn đầu tiên được gửi đi. Chính thức đánh dấu ngày chúng ta kết nối với nhau."
     }
