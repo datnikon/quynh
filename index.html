@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hành trình kết nối | Tôi & Quỳnh</title>
+    <meta property="og:title" content="Hành trình kết nối của chúng mình" />
+    <meta
+      property="og:description"
+      content="Lưu giữ những kỷ niệm ngọt ngào nhất."
+    />
+    <meta
+      property="og:image"
+      content="https://datnikon.github.io/quynh/images/smile.jpg"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G9TYKGJM0E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G9TYKGJM0E");
+    </script>
+  </head>
+  <body>
+    <div class="music-player">
+      <audio id="bg-music" loop>
+        <source src="./mp3/music.mp3" type="audio/mpeg" />
+      </audio>
+      <button id="music-btn" class="music-disc">
+        <span class="music-control-icon">🎵</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Nơi bé nhỏ lưu giữ hành trình đôi ta</h1>
+        <p class="names">Tôi <span class="heart-beat">vs</span> Quỳnh</p>
+      </header>
+
+      <section id="quote-section">
+        <div id="love-quote">Đang tải lời yêu thương...</div>
+      </section>
+
+      <section>
+        <h3 class="section-title">Ta đã kết nối được</h3>
+        <div class="timer">
+          <div class="time-box">
+            <span id="days">0</span>
+            <p>Ngày</p>
+          </div>
+          <div class="time-box">
+            <span id="hours">0</span>
+            <p>Giờ</p>
+          </div>
+          <div class="time-box">
+            <span id="minutes">0</span>
+            <p>Phút</p>
+          </div>
+          <div class="time-box">
+            <span id="seconds">0</span>
+            <p>Giây</p>
+          </div>
+        </div>
+        <p
+          id="start-date-display"
+          style="font-size: 0.8rem; color: #888; margin-top: 15px"
+        ></p>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2 class="main-title">📖 Nhật ký</h2>
+        <div class="timeline" id="diary-container"></div>
+      </section>
+
+      <hr class="divider" />
+
+      <section>
+        <h2 class="main-title">📸 Khoảnh khắc</h2>
+        <div class="gallery" id="gallery-container"></div>
+      </section>
+
+      <footer class="footer-section">
+        <button id="open-letter-btn" class="btn-share btn-letter">
+          💌 Thư gửi Quỳnh
+        </button>
+        <br />
+        <a href="#" id="share-btn" class="btn-share" target="_blank"
+          >📝 Gửi tâm tư cho anh</a
+        >
+      </footer>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="letter-modal" class="lightbox">
+      <div class="letter-content">
+        <span class="close-letter">&times;</span>
+        <h2 class="letter-title">Gửi Quỳnh,</h2>
+        <p id="letter-text"></p>
+        <p class="letter-sign">- Miss You -</p>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
