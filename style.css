@@ -212,3 +212,63 @@ h1 {
 .letter-sign { text-align: right; font-weight: bold; color: var(--primary-color); margin-top: 20px; }
 #caption { color: #ccc; margin-top: 10px; text-align: center; width: 100%; position: absolute; bottom: 20px; }
 @keyframes zoomIn { from {transform: scale(0.8); opacity: 0;} to {transform: scale(1); opacity: 1;} }
+
+/* style.css */
+
+/* Bucket List Styling */
+.bucket-list {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 2px solid #fff0f5; /* Viền hồng nhạt */
+}
+
+.bucket-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+    transition: all 0.3s ease;
+}
+
+.bucket-item:last-child {
+    border-bottom: none;
+}
+
+.bucket-check {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    min-width: 25px;
+}
+
+.bucket-text {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* Trạng thái Đã hoàn thành */
+.bucket-item.done .bucket-text {
+    text-decoration: line-through;
+    color: #bbb; /* Màu chữ mờ đi */
+}
+
+.bucket-item.done .bucket-check {
+    animation: pop 0.3s;
+}
+
+/* Hiệu ứng nảy tim */
+@keyframes pop {
+    50% { transform: scale(1.5); }
+}
+
+/* Hover hiệu ứng nhẹ */
+.bucket-item:hover {
+    background-color: #fafafa;
+    padding-left: 10px; /* Dịch chuyển nhẹ sang phải */
+    border-radius: 5px;
+}
