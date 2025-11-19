@@ -11,7 +11,7 @@ const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSer0xtF-0d01ayk
 const letterContent = `
 Hôm nay anh làm trang web này dành riêng cho em. Có thể nó không phải là món quà đắt tiền nhất, nhưng nó chứa đựng tình cảm chân thành của anh.
 
-Cảm ơn em đã đến kết nối với anh vào ngày 18/11/2025. Anh hứa sẽ luôn trân trọng và gìn giữ những khoảnh khắc này.
+Cảm ơn em đã đến bước vào cuộc đời anh ngày 18/11/2025. Anh hứa sẽ luôn trân trọng và gìn giữ những khoảnh khắc này.
 
 Mong rằng chúng ta sẽ cùng nhau làm đầy album ảnh và nhật ký này thật nhiều nhé!
 `;
@@ -28,7 +28,7 @@ const quotes = [
 const diaryEntries = [
     {
         date: "19/11/2025",
-        title: "Ngày làm web cho em",
+        title: "Ngày làm web",
         content: "Hôm nay anh đã ngồi làm chiếc web này, vừa làm vừa nghĩ đến nụ cười của em. Hy vọng em sẽ thích nó."
     },
     {
