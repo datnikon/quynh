@@ -272,3 +272,90 @@ h1 {
     padding-left: 10px; /* Dịch chuyển nhẹ sang phải */
     border-radius: 5px;
 }
+
+/* style.css */
+
+/* Memory Notes Styling */
+.memory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Tự động chia cột */
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.memory-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    height: 100px; /* Chiều cao mặc định khi đóng */
+}
+
+.memory-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(233, 30, 99, 0.15);
+}
+
+.memory-card.active {
+    height: auto; /* Tự động giãn ra khi mở */
+    min-height: 100px;
+    border-color: var(--primary-color);
+    background-color: #fffbfd; /* Màu nền hồng rất nhạt khi mở */
+    z-index: 10;
+}
+
+.memory-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.memory-title {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.memory-content {
+    display: none; /* Mặc định ẩn nội dung */
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    padding-top: 10px;
+    border-top: 1px dashed #ffccd5;
+    margin-top: 10px;
+    line-height: 1.5;
+    animation: fadeIn 0.5s;
+}
+
+.memory-card.active .memory-content {
+    display: block; /* Hiện nội dung khi có class active */
+}
+
+/* Dấu mũi tên nhỏ chỉ xuống để biết là bấm được */
+.memory-card::after {
+    content: '▼';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: #ddd;
+    transition: opacity 0.3s;
+}
+
+.memory-card.active::after {
+    opacity: 0; /* Ẩn mũi tên khi đã mở */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
