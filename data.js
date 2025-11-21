@@ -60,3 +60,37 @@ const loveBucketList = [
     { text: "Chụp 1.000 tấm ảnh cùng nhau", done: false },
     { text: "Cùng nhau đi du nịch", done: false },
 ];
+
+// data.js
+
+// ... (Các phần cũ giữ nguyên) ...
+
+// 8. Góc ghi nhớ (Memory Notes)
+// 8. Góc ghi nhớ (Memory Notes) - Đã cập nhật cute phô mai que
+const memoryNotes = [
+    { 
+        title: "Món ăn 'chân ái'", 
+        icon: "🍜",
+        content: "Tà sữa truyền thống, tà sữa kem trứng, đồ ăn vặt (Cứ mua là auto vui)." 
+    },
+    { 
+        title: "Size quần áo/giày", 
+        icon: "👗",
+        content: "M58 đáng eo, size cụ thể thì... đang đợi em chia sẻ bí mật ^^" 
+    },
+    { 
+        title: "Điều cấm kỵ", 
+        icon: "🚫",
+        content: "⚠️ Chính chủ tự nhận là KHÓ TÍNH. Cơ mà anh nghe bảo con gái càng khó tính thì khi yêu được chiều chuộng sẽ càng đáng eo." 
+    },
+    { 
+        title: "Ngày đặc biệt", 
+        icon: "📅",
+        content: "Sinh nhật: 13/06 (Song Tử). Còn ngày gì nữa thì... waiting..." 
+    },
+    { 
+        title: "Thói quen xấu", 
+        icon: "zzz",
+        content: "Người tuyệt vời như em thì làm gì có thói quen xấu nhỉ (^^)"
+    }
+];
