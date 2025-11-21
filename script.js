@@ -117,4 +117,31 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         bucketContainer.appendChild(div);
     });
+
+    // --- 9. RENDER MEMORY NOTES (Thêm mới) ---
+    const memoryContainer = document.getElementById('memory-container');
+    
+    memoryNotes.forEach(note => {
+        const div = document.createElement('div');
+        div.className = 'memory-card';
+        div.innerHTML = `
+            <span class="memory-icon">${note.icon}</span>
+            <span class="memory-title">${note.title}</span>
+            <div class="memory-content">${note.content}</div>
+        `;
+        
+        // Sự kiện Click
+        div.addEventListener('click', function() {
+            // 1. Đóng tất cả các thẻ khác đang mở (nếu muốn chỉ mở 1 cái 1 lúc)
+            // Nếu bạn muốn mở nhiều cái cùng lúc thì xóa dòng forEach bên dưới đi
+            document.querySelectorAll('.memory-card').forEach(card => {
+                if (card !== div) card.classList.remove('active');
+            });
+
+            // 2. Toggle thẻ hiện tại
+            div.classList.toggle('active');
+        });
+
+        memoryContainer.appendChild(div);
+    });
 });
