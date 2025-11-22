@@ -359,3 +359,40 @@ h1 {
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- PROMISE LIST STYLING --- */
+.promise-container {
+    display: flex; flex-direction: column; gap: 15px; padding: 0 5px;
+    max-width: 500px; margin: 0 auto;
+}
+
+.promise-card {
+    background: #fff; border-radius: 12px; padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #ddd; text-align: left; position: relative;
+    transition: transform 0.2s;
+}
+.promise-card:hover { transform: translateX(5px); }
+
+.promise-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.promise-status { font-size: 0.75rem; font-weight: bold; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+.promise-text { font-size: 1rem; font-weight: 600; color: #333; margin-bottom: 5px; }
+.promise-date { font-size: 0.8rem; color: #888; font-style: italic; }
+
+/* Dấu tích xanh */
+.check-icon { display: none; color: #4caf50; font-size: 1.2rem; position: absolute; right: 15px; bottom: 15px; }
+
+/* --- MÀU SẮC TRẠNG THÁI --- */
+
+/* 1. Pending (Đang chờ - Màu Cam) */
+.promise-card.pending { border-left-color: #ff9800; }
+.promise-card.pending .promise-status { background-color: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+
+/* 2. Done (Đã xong - Màu Xanh Lá) */
+.promise-card.done { border-left-color: #4caf50; background-color: #f1f8e9; }
+.promise-card.done .promise-status { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+.promise-card.done .check-icon { display: block; }
+
+/* 3. Processing (Đang làm - Màu Xanh Dương - MỚI) */
+.promise-card.processing { border-left-color: #03a9f4; }
+.promise-card.processing .promise-status { background-color: #e1f5fe; color: #0277bd; border: 1px solid #b3e5fc; }

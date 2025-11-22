@@ -76,7 +76,7 @@ const memoryNotes = [
     { 
         title: "Size quần áo/giày", 
         icon: "👗",
-        content: "M58 đáng eo, size cụ thể thì... đang đợi em chia sẻ bí mật ^^" 
+        content: "M58 đáng eo, 46-47 kí lô, size cụ thể thì... đang đợi em chia sẻ bí mật ^^" 
     },
     { 
         title: "Điều cấm kỵ", 
@@ -93,4 +93,24 @@ const memoryNotes = [
         icon: "zzz",
         content: "Người tuyệt vời như em thì làm gì có thói quen xấu nhỉ (^^)"
     }
+];
+
+// 9. Danh sách Lời hứa (Promise List)
+const myPromises = [
+    {
+        text: "Giật giải 'siêu kute' môn Triết học A+",
+        status: "processing",
+        date: "Đang chờ kết quả..." // Ghi chú nhỏ
+    },
+    {
+        text: "Dắt em đi đến những nơi em thích",
+        status: "pending",
+        date: "Có hiệu lực trọn đời, waiting... to start!!!"
+    },
+    {
+        text: "Không để em ngủ mà vẫn còn giậnnnnn",
+        status: "processing",
+        date: "Cam kết dài hạn!"
+    }
+    // Sau này hứa gì thêm thì copy thêm dòng vào đây
 ];

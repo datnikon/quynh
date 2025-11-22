@@ -144,4 +144,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
         memoryContainer.appendChild(div);
     });
+
+    // --- RENDER PROMISE LIST (Logic mới có Processing) ---
+    const promiseContainer = document.getElementById('promise-container');
+    
+    if (promiseContainer && typeof myPromises !== 'undefined') {
+        myPromises.forEach(item => {
+            const div = document.createElement('div');
+            let statusText = '';
+            
+            // Kiểm tra status để gán class CSS tương ứng
+            if (item.status === 'done') {
+                div.className = 'promise-card done';
+                statusText = 'Đã thực hiện';
+            } else if (item.status === 'processing') {
+                div.className = 'promise-card processing';
+                statusText = 'Đang thực hiện 🏃';
+            } else {
+                div.className = 'promise-card pending';
+                statusText = 'Đang chờ';
+            }
+            
+            div.innerHTML = `
+                <div class="promise-header">
+                    <span class="promise-status">${statusText}</span>
+                </div>
+                <div class="promise-text">${item.text}</div>
+                <div class="promise-date">Note: ${item.date}</div>
+                <div class="check-icon">✔</div>
+            `;
+            promiseContainer.appendChild(div);
+        });
+    }
 });
