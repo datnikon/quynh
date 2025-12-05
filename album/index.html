@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Góc nhỏ của Quỳnh ❤️</title>
+    <meta property="og:title" content="Góc nhỏ của Quỳnh ❤️" />
+    <meta
+      property="og:description"
+      content="Những khoảnh khắc đáng nhớ của Quỳnh."
+    />
+    <meta
+      property="og:image"
+      content="https://datnikon.github.io/quynh/images/quynh_tim.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G9TYKGJM0E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G9TYKGJM0E");
+    </script>
+
+    <link rel="stylesheet" href="album-style.css" />
+  </head>
+  <body>
+    <!-- <a href="/index.html" class="nav-back">← Về trang chính</a> -->
+
+    <div id="bg-hearts"></div>
+
+    <div id="cover-screen" class="cover-screen">
+      <h1 class="cover-title">Góc nhỏ của Quỳnh ❤️</h1>
+      <p style="color: #666; margin-bottom: 30px">
+        Một 🎁 đặc biệt đang chờ em mở...
+      </p>
+      <button id="open-btn" class="open-btn">🎁 Bùmm - Mở Nào!!!</button>
+    </div>
+
+    <div id="gallery-container" class="gallery-container">
+      <h2 class="heart-header">Khoảnh khắc của Em!</h2>
+
+      <div class="heart-grid" id="heart-grid"></div>
+
+      <button id="close-btn" class="close-btn">Đóng lại hông Én thấy!!</button>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-lb">&times;</span>
+      <button class="lb-btn prev" id="prev-btn">❮</button>
+      <div style="text-align: center">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+        <div class="caption" id="lightbox-caption"></div>
+      </div>
+      <button class="lb-btn next" id="next-btn">❯</button>
+    </div>
+
+    <script src="album-data.js"></script>
+    <script src="album-script.js"></script>
+  </body>
+</html>
