@@ -55,7 +55,7 @@ const photos = [
 const loveBucketList = [
     { text: "Đi xem phim", done: false },
     { text: "Nấu cho nhau một bữa ăn", done: false },
-    //{ text: "Mặc áo đôi", done: false },
+    { text: "Mặc áo đôi", done: false },
     { text: "Cùng đón giao thừa", done: false },
     { text: "Chụp 1.000 tấm ảnh cùng nhau", done: false },
     { text: "Cùng nhau đi du nịch", done: false },
@@ -71,7 +71,7 @@ const memoryNotes = [
     { 
         title: "Món ăn 'chân ái'", 
         icon: "🍜",
-        content: "Tà sữa truyền thống, tà sữa kem trứng, đồ ăn vặt (Cứ mua là auto vui)." 
+        content: "Tà sữa truyền thống, tà sữa kem trứng, đồ ăn vặt (Cứ mua là auto vui). Gà (cổ, cánh, đầu...)" 
     },
     { 
         title: "Size quần áo/giày", 
@@ -99,8 +99,8 @@ const memoryNotes = [
 const myPromises = [
     {
         text: "Giật giải 'siêu kute' môn Triết học A+",
-        status: "processing",
-        date: "Đang chờ kết quả..." // Ghi chú nhỏ
+        status: "done",
+        date: "[06/12] Đã trao trải - Đang chờ kết quả... " // Ghi chú nhỏ
     },
     {
         text: "Dắt em đi đến những nơi em thích",
