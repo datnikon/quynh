@@ -47,6 +47,10 @@ const photos = [
         src: "smile.jpg", 
         caption: "Nụ cười tỏa nắng" 
     },
+    { 
+        src: "video.png", 
+        caption: "Lần đầu video call khôm che, tươi qué ^^" 
+    },
 ];
 
 // data.js
