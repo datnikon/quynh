@@ -51,6 +51,10 @@ const photos = [
         src: "video.png", 
         caption: "Lần đầu video call khôm che, tươi qué ^^" 
     },
+    { 
+        src: "kyco.png", 
+        caption: "Ảnh đầu tiên với nheo ^^" 
+    },
 ];
 
 // data.js
