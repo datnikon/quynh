@@ -48,7 +48,7 @@ const photos = [
         caption: "Nụ cười tỏa nắng" 
     },
     { 
-        src: "video.png", 
+        src: "video.jpg", 
         caption: "Lần đầu video call khôm che, tươi qué ^^" 
     },
     { 
@@ -56,7 +56,7 @@ const photos = [
         caption: "Ảnh đầu tiên với nheo ^^" 
     },
     { 
-        src: "movie.jpg", 
+        src: "movie.jpeg", 
         caption: "Lần đầu đi xem phim ^^" 
     },
 ];
