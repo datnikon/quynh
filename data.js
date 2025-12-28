@@ -52,8 +52,12 @@ const photos = [
         caption: "Lần đầu video call khôm che, tươi qué ^^" 
     },
     { 
-        src: "kyco.png", 
+        src: "kyco.jpg", 
         caption: "Ảnh đầu tiên với nheo ^^" 
+    },
+    { 
+        src: "movie.jpg", 
+        caption: "Lần đầu đi xem phim ^^" 
     },
 ];
 
@@ -61,8 +65,8 @@ const photos = [
 
 // 7. Bucket List - Những điều cùng làm
 const loveBucketList = [
-    { text: "Đi xem phim", done: false },
-    { text: "Nấu cho nhau một bữa ăn", done: false },
+    { text: "Đi xem phim", done: true },
+    { text: "Nấu cho nhau một bữa ăn", done: true },
     { text: "Mặc áo đôi", done: false },
     { text: "Cùng đón giao thừa", done: false },
     { text: "Chụp 1.000 tấm ảnh cùng nhau", done: false },
