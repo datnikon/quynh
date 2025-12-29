@@ -30,6 +30,11 @@ const quotes = [
 // 5. Nhật ký (Thêm mới lên đầu)
 const diaryEntries = [
     {
+        date: "25/11/2025",
+        title: "Ngày tỏ tình <3",
+        content: "Lần đầu nói những câu nói..."
+    },
+    {
         date: "19/11/2025",
         title: "Ngày làm web",
         content: "Hôm nay anh đã ngồi làm chiếc web này, vừa làm vừa nghĩ đến nụ cười của em. Hy vọng em sẽ thích nó."
@@ -57,7 +62,19 @@ const photos = [
     },
     { 
         src: "movie.jpeg", 
-        caption: "Lần đầu đi xem phim ^^" 
+        caption: "[28/12] Lần đầu đi xem phim ^^" 
+    },
+    { 
+        src: "movie.jpeg", 
+        caption: "[24/12] Ngày đầu - Chụp hình photobooth" 
+    },
+    { 
+        src: "my_cay.jpg", 
+        caption: "Tối đầu tiền - đi ăn mỳ cay" 
+    },
+    { 
+        src: "du_tren.jpeg", 
+        caption: "Đú trend tóp top" 
     },
 ];
 
