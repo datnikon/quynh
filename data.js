@@ -65,7 +65,7 @@ const photos = [
         caption: "[28/12] Lần đầu đi xem phim ^^" 
     },
     { 
-        src: "movie.jpeg", 
+        src: "photo_booth.jpg", 
         caption: "[24/12] Ngày đầu - Chụp hình photobooth" 
     },
     { 
@@ -73,7 +73,7 @@ const photos = [
         caption: "Tối đầu tiền - đi ăn mỳ cay" 
     },
     { 
-        src: "du_tren.jpeg", 
+        src: "du_tren.jpg", 
         caption: "Đú trend tóp top" 
     },
 ];

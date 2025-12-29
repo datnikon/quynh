@@ -253,7 +253,7 @@ h1 {
 
 /* Trạng thái Đã hoàn thành */
 .bucket-item.done .bucket-text {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     color: #bbb; /* Màu chữ mờ đi */
 }
 

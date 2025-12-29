@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         div.className = item.done ? 'bucket-item done' : 'bucket-item';
         
         // Icon: Nếu xong rồi thì ❤️, chưa xong thì ô vuông ⬜ (hoặc icon tròn)
-        const icon = item.done ? '❤️' : '⬜'; 
+        const icon = item.done ? '✔' : '⬜'; 
         
         div.innerHTML = `
             <span class="bucket-check">${icon}</span>
