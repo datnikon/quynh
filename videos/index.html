@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rạp chiếu phim tình yêu ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="video-style.css">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G9TYKGJM0E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G9TYKGJM0E");
+    </script>
+    <meta property="og:title" content="Rạp chiếu phim tình êu ❤️" />
+    <meta property="og:description" content="Rạp chiếu phim tình êu ❤️" />
+    <meta
+      property="og:image"
+      content="https://datnikon.github.io/quynh/images/quynh_tim.png"
+    />
+</head>
+<body>
+
+    <a href="https://datnikon.github.io/quynh/" class="nav-back">← Về trang chính</a>
+    
+    <div id="bg-hearts"></div>
+
+    <div class="container">
+        <header>
+            <h1>🎬 Rạp Chiếu Phim Tình Yêu</h1>
+            <p class="subtitle">Những thước phim quay chậm về hạnh phúc của chúng mình...</p>
+        </header>
+
+        <div class="video-grid" id="video-grid">
+            </div>
+
+        <div class="footer-note">
+            <p>Bấm vào để xem nha! 🍿</p>
+        </div>
+    </div>
+
+    <div id="video-modal" class="video-modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <div class="video-wrapper">
+                <iframe id="youtube-player" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3 id="modal-video-title"></h3>
+            <p id="modal-video-desc"></p>
+        </div>
+    </div>
+
+    <script src="video-data.js"></script>
+    <script src="video-script.js"></script>
+</body>
+</html>

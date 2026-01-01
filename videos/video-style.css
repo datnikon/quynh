@@ -1,0 +1,130 @@
+/* --- CẤU HÌNH CHUNG --- */
+:root {
+    --primary-color: #e91e63;
+    --bg-color: #fff0f5;
+    --card-bg: #ffffff;
+    --text-color: #333;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0; padding: 0;
+    min-height: 100vh;
+}
+
+/* Nút quay lại */
+.nav-back {
+    position: absolute; top: 20px; left: 20px;
+    color: var(--primary-color); text-decoration: none;
+    font-weight: bold; font-size: 1.1rem;
+    transition: transform 0.2s;
+    background: rgba(255, 255, 255, 0.8); padding: 8px 15px; border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 10;
+}
+.nav-back:hover { transform: translateX(-5px); }
+
+.container {
+    max-width: 1000px; margin: 0 auto; padding: 20px; text-align: center; position: relative; z-index: 1;
+}
+
+header { margin-top: 60px; margin-bottom: 40px; }
+h1 {
+    font-family: 'Pacifico', cursive; color: var(--primary-color);
+    font-size: 2.5rem; margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.subtitle { color: #666; font-style: italic; font-size: 1.1rem; }
+
+/* --- VIDEO GRID --- */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Tự động chia cột */
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.video-card {
+    background: var(--card-bg);
+    border-radius: 15px; overflow: hidden;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.1);
+    transition: all 0.3s ease; cursor: pointer;
+    position: relative; border: 3px solid #fff;
+}
+
+.video-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 25px rgba(233, 30, 99, 0.2); }
+
+/* Phần chứa ảnh thumbnail và nút play */
+.thumbnail-wrapper {
+    position: relative; width: 100%; padding-top: 56.25%; /* Tỉ lệ 16:9 */
+    overflow: hidden; background: #000;
+}
+
+.video-thumbnail {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0.8; transition: 0.3s;
+}
+.video-card:hover .video-thumbnail { opacity: 0.6; transform: scale(1.05); }
+
+/* Nút Play ở giữa */
+.play-button {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; height: 60px;
+    background: rgba(233, 30, 99, 0.8);
+    border-radius: 50%; display: flex; justify-content: center; align-items: center;
+    color: white; font-size: 30px;
+    box-shadow: 0 0 20px rgba(233, 30, 99, 0.5);
+    transition: 0.3s;
+}
+.play-button::before { content: '▶'; margin-left: 5px; }
+.video-card:hover .play-button { background: rgba(233, 30, 99, 1); transform: translate(-50%, -50%) scale(1.1); }
+
+.video-info { padding: 15px; text-align: left; }
+.video-title { margin: 0; color: #333; font-size: 1.1rem; font-weight: bold; }
+.video-date { color: #888; font-size: 0.85rem; margin-top: 5px; }
+
+/* --- VIDEO MODAL (Màn hình xem) --- */
+.video-modal {
+    display: none; /* Ẩn mặc định */
+    position: fixed; z-index: 2000; left: 0; top: 0;
+    width: 100%; height: 100%; overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center; align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff; padding: 20px;
+    border-radius: 15px; width: 100%; max-width: 800px;
+    text-align: left;
+}
+
+/* Wrapper để giữ tỉ lệ 16:9 cho iframe */
+.video-wrapper {
+    position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0; overflow: hidden; border-radius: 10px; background: #000;
+}
+.video-wrapper iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.close-modal {
+    position: absolute; top: -40px; right: 0;
+    color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;
+}
+#modal-video-title { color: var(--primary-color); margin: 15px 0 5px; }
+#modal-video-desc { color: #555; font-size: 0.95rem; }
+
+.footer-note { margin-top: 40px; color: #888; font-style: italic; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+/* Tim bay nền */
+.floating-heart { position: fixed; color: #ff80ab; opacity: 0.3; z-index: 0; animation: floatUp linear infinite; pointer-events: none;}
+@keyframes floatUp { to { transform: translateY(-100vh); opacity: 0; } }
