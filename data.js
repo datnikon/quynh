@@ -85,9 +85,9 @@ const loveBucketList = [
     { text: "Đi xem phim", done: true },
     { text: "Nấu cho nhau một bữa ăn", done: true },
     { text: "Mặc áo đôi", done: false },
-    { text: "Cùng đón giao thừa", done: false },
+    { text: "Cùng đón giao thừa", done: true },
     { text: "Chụp 1.000 tấm ảnh cùng nhau", done: false },
-    { text: "Cùng nhau đi du nịch", done: false },
+    { text: "Cùng nhau đi du nịch", done: true },
 ];
 
 // data.js
@@ -133,7 +133,7 @@ const myPromises = [
     },
     {
         text: "Dắt em đi đến những nơi em thích",
-        status: "pending",
+        status: "processing",
         date: "Có hiệu lực trọn đời, waiting... to start!!!"
     },
     {
